@@ -1,0 +1,241 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    position: relative;
+    z-index: 1000; 
+}
+
+header {
+    background-color: #002B5B;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    border-bottom: 2px solid #FFD700;
+    transition: 0.3s ease;
+}
+
+.header-content {
+    padding: 10px 20px;
+    animation: fadeIn 1s ease-in-out;
+    background-color: #002B5B;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #FFD700;
+}
+
+p {
+    font-size: 18px;
+    color: #014713;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #002B5B;
+    animation: fadeIn 1s ease;
+}
+
+#about {
+    background-color: #FFD700;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 20px;
+    color: #333;
+}
+
+#education {
+    background-color: #FFF8E1;
+}
+
+.education-card {
+    background-color: #F2F2F2;
+    border-left: 5px solid #FFD700;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#skills {
+    background-color: #004C99;
+    color: #fff;
+    text-align: center;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container ul li {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.skills-container ul li::before {
+    content: '✔';
+    color: #FFD700;
+    padding-right: 10px;
+}
+
+#projects {
+    background-color: #FFF8E1;
+}
+
+.project-card {
+    background-color: #FFFFFF;
+    border-left: 5px solid #002B5B;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#leadership {
+    background-color: #F2F2F2;
+}
+
+.leadership-card {
+    background-color: #fff;
+    border-left: 5px solid #FFD700;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leadership-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #FFF8E1
+}
+
+#contact button {
+    background-color: #002B5B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#contact button:hover {
+    background-color: #FFD700;
+    color: #002B5B;
+    transition: background-color 0.3s ease;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1e90ff;
+    transform: scale(1.2);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002B5B;
+    color: #fff;
+}
